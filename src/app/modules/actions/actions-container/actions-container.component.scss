@@ -1,0 +1,11 @@
+:host {
+    border: 1px solid #ccc;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    .action-wrapper {
+        padding: 1rem;
+
+    }
+}
