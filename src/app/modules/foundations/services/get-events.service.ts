@@ -11,7 +11,12 @@ export class GetEventsService {
 
   constructor(private http: HttpClient) { };
 
-  getEvents$():Observable<IEvents[]> {
-      return this.http.get<IEvents[]>(environment.eventsUrl)
+  getEvents$(): Observable<IEvents[]> {
+    // return this.http.get<IEvents[]>(environment.eventsUrl)
+    return this.http.get<IEvents[]>('http://localhost:3000');
+  }
+
+  setTodoItem():Observable<any> {
+    return this.http.post('http://localhost:3000/items', { name: 'TODO Docker', completed: true });
   }
 }

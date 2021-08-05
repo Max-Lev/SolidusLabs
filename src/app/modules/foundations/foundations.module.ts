@@ -7,6 +7,8 @@ import { CdkTableModule } from '@angular/cdk/table';
 // import { HttpClientModule } from '@angular/common/http';
 import { CdkVirtualScrollViewport, ScrollingModule } from '@angular/cdk/scrolling';
 import { MatTableModule } from '@angular/material/table';
+import { SocketIOService } from './socketIO/socket-io.service';
+// import {CdkTableModule} from '@angular/cdk/table';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,9 @@ import { MatTableModule } from '@angular/material/table';
     MatTableModule,
     ScrollingModule,
     CdkTableModule
+  ],
+  providers: [
+    SocketIOService
   ]
 })
 export class FoundationsModule { }

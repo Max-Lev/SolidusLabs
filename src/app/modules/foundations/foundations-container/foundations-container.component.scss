@@ -1,0 +1,12 @@
+:host {
+    ::ng-deep {
+        cdk-virtual-scroll-viewport>.cdk-virtual-scroll-content-wrapper>table>tbody {
+            tr {
+                display: table-row;
+                td {
+                    display: table-cell;
+                }
+            }
+        }
+    }
+}

@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  eventsUrl:'/assets/events/events.json'
+  eventsUrl:'/assets/events/events.json',
+  socketIO:'http://localhost:5000'
 };
 
 /*

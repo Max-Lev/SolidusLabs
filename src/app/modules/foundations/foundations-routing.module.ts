@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FoundationsContainerComponent } from './foundations-container/foundations-container.component';
 
-
 const routes = [
   {
     path:'',component:FoundationsContainerComponent
@@ -13,4 +12,8 @@ const routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class FoundationsRoutingModule { }
+export class FoundationsRoutingModule {
+  constructor(){
+    
+  }
+ }
